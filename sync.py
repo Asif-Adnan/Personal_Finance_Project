@@ -48,13 +48,6 @@ class Sync(object):
         expenses = sObj.getExpenses(limit=0)
         userId = user.getId()
 
-        '''
-                                                        |||Darina's part - checking whether SQlite database exists|||
-
-                               Checks if database exists in CWD, if not - creates the database with all necessary tables
-                               (sql code from manual database creation and insertion of dummy data from Sonya's part).
-
-                               '''
         with sqlite3.connect(str(userId)+".sqlite")as conn:
             cursor = conn.cursor()
             try:
@@ -112,12 +105,7 @@ class Sync(object):
                 conn.commit()
                 cursor.execute("""INSERT INTO Categories(categoryID,"category") VALUES ("7","Utilities")""")
                 conn.commit()
-                '''
-                                                                |||Sonya's Part for Income.py|||
 
-                                       Insertion of rows to Categories tables is implemented here.
-
-                                       '''
                 cursor.execute("""INSERT INTO Categories(categoryID,"category") VALUES ("100","Income")""")
                 conn.commit()
             except sqlite3.OperationalError:
@@ -248,12 +236,7 @@ class Sync(object):
                 cursor.execute(
                     """INSERT INTO Subcategories(subcategoryID,"subcategory",category) VALUES ("41","Water","Utilities")""")
                 conn.commit()
-                '''
-                                                |||Sonya's Part for Income.py|||
 
-                       Insertion of rows to Subcategories tables is implemented here.
-
-                       '''
                 cursor.execute(
                     """INSERT INTO Subcategories(subcategoryID,"subcategory",category) VALUES ("101","Salary","Income")""")
                 conn.commit()

@@ -8,20 +8,6 @@ class Income(object):
 
     def income_input(self):
 
-        '''
-                                 |||Sonya's Part for Income.py|||
-
-        Insertion of rows to Categories and Subcategories tables is implemented in sync.py file in the part
-        of creation of appropriate tables.
-
-        P.S. The Sonya's part has been commented out in sync.py file.
-        '''
-
-
-        '''
-                                |||Asif's Interface Part for income.py Starts Here|||
-        '''
-
         obj = sync.Sync()
 
         name = obj.db_name()
@@ -188,13 +174,6 @@ class Income(object):
 
                     continue
 
-        '''
-                              |||Asif's Interface Part for income.py Ends Here|||
-        '''
-
-        '''
-                           |||Sonya's Income Insertion into the Database Starts Here|||
-        '''
         # Assigning the base currency, Euro, to currency variable
 
         currency = "EUR"
