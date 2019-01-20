@@ -1,0 +1,4 @@
+consumer_key: 7Ep6FK6pS86ZcFyXoZupkbZD6O3JDILckpQcelcI
+consumer_secret: HezGdcKNIBdAPl0ndUORcwHPnTVHURIZe2rc4Bw2
+oauth_token: RUtn46CJR5N1fGpI8UTGBdOS6ewKQ0gJ5lBUf1c0
+oauth_token_secret: Dul3JR8iVcdqrqVAYat8EukFQtvhFjze0uXqTSWJ
