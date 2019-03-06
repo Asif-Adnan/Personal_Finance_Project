@@ -1,6 +1,3 @@
-# Task 4. Reporting
-# 4.3. Write Python code
-
 import sqlite3
 import datetime
 import pandas as pd
